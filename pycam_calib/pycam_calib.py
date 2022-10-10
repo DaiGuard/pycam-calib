@@ -8,10 +8,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
-from utils import camera_utils
-
-
-__appname__ = 'pycam-calib'
+import camera_utils
 
 
 class MainWindow(QMainWindow):    
