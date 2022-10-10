@@ -8,7 +8,7 @@ def _requires_from_file(filename):
     return open(filename).read().splitlines()
 
 setup(    
-    name='pycam-calib',
+    name='pycam_calib',
     version='0.0.1',
     description='',
     long_description=long_description,
