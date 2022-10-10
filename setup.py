@@ -29,7 +29,7 @@ setup(
     python_requires='>=3.8',
     entry_points={
         'console_scripts': [
-            'pycam-calib = pycam-calib:main'
+            'pycam_calib=pycam_calib:main'
         ]
     },    
 )
