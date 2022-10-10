@@ -18,7 +18,10 @@ setup(
     author_email='daiguard0224@gmail.com',
     license='MIT',
     package_dir={'pycam-calib': '.'},
-    packages=find_packages(),    
+    package_data={
+        'resource/pycam_calib.ui': ['resource/pycam_calib.ui'],
+    }
+    packages=find_packages(),
     install_requires=_requires_from_file('requirements.txt'),    
     classifiers=[
         "Programming Language :: Python :: 3",

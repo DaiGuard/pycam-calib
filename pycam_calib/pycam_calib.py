@@ -26,7 +26,7 @@ class MainWindow(QMainWindow):
         self.temp_image = None
         
         # UIデータの読み込み
-        self.ui = uic.loadUiType('resource/pycam-calib.ui', self)[0]()
+        self.ui = uic.loadUiType('resource/pycam_calib.ui', self)[0]()
         self.ui.setupUi(self)        
 
         # カメラデバイス名の登録
