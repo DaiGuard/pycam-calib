@@ -13,7 +13,7 @@ setup(
     description='',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/DaiGuard/pycam-calib',
+    url='https://github.com/DaiGuard/pycam_calib',
     author='DaiGuard',
     author_email='daiguard0224@gmail.com',
     license='MIT',
