@@ -23,7 +23,8 @@ setup(
 
     packages=find_packages(),
     package_dir={'': '.'},
-    package_data={'resource/pycam_calib.ui': ['resource/pycam_calib.ui']},
+    package_data={'': ['resource/pycam_calib.ui']},
+    include_package_data=True,
 
     install_requires=_requires_from_file('requirements.txt'),    
     classifiers=[
