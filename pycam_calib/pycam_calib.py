@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import os
 
 from PyQt5 import uic
 from PyQt5.QtGui import *
@@ -18,10 +19,11 @@ class MainWindow(QMainWindow):
         # 変数登録        
         self.device_id = -1
         self.device_format = (0, 0)
-        self.temp_image = None
-        
+        self.temp_image = None    
+
         # UIデータの読み込み
-        self.ui = uic.loadUiType('resource/pycam_calib.ui', self)[0]()
+        resource_path = os.path.dirname(__file__)
+        self.ui = uic.loadUiType(resource_path + 'resource/pycam_calib.ui', self)[0]()
         self.ui.setupUi(self)        
 
         # カメラデバイス名の登録
