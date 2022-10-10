@@ -7,8 +7,7 @@ with open("README.md", "r") as fh:
 def _requires_from_file(filename):
     return open(filename).read().splitlines()
 
-setup(
-    app=['pycam-calib.py'],
+setup(    
     name='pycam-calib',
     version='0.0.1',
     description='',
