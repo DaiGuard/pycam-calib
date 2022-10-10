@@ -10,18 +10,19 @@ def _requires_from_file(filename):
 setup(    
     name='pycam_calib',
     version='0.0.1',
+
     description='',
     long_description=long_description,
     long_description_content_type="text/markdown",
+
     url='https://github.com/DaiGuard/pycam_calib',
+
     author='DaiGuard',
     author_email='daiguard0224@gmail.com',
     license='MIT',
-    package_dir={'pycam-calib': '.'},
-    package_data={
-        'resource/pycam_calib.ui': ['resource/pycam_calib.ui'],
-    },
+
     packages=find_packages(),
+    package_dir={'': '.'},
     install_requires=_requires_from_file('requirements.txt'),    
     classifiers=[
         "Programming Language :: Python :: 3",
